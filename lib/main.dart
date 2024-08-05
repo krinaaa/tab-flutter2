@@ -36,7 +36,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 255, 185, 208),
+        backgroundColor: Colors.amber,
         title: Text("Daftar Elektronik"),
         bottom: TabBar(
           controller: controller,
@@ -57,7 +57,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           hp.Smartphone(),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
+      bottomNavigationBar: Material(
+        color: Colors.amber,
         child: TabBar(
           controller: controller,
           tabs: <Widget>[
